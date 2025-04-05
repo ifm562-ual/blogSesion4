@@ -15,7 +15,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'  # Set the Ruby version according to your requirements
+          ruby-version: '3.2'  # Set the Ruby version according to your requirements
 
       # Install dependencies
       - name: Install Bundler
@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to Azure Static Web App
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<YOUR_APP_NAME> }}  # Replace with your token
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_b9d56cbe4cab9e64688777f6a42bdd4747748c59e94d4fef93c77bc8493404ca06-68f67b37-46a8-471b-a7f7-b9ebdd912afd01031320de0bec10 }}  # Replace with your token
           repo_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for integrations
           action: "upload"
           app_location: "/"  # Jekyll site is in the root of the repository
