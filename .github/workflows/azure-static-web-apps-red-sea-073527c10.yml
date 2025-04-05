@@ -21,6 +21,8 @@ jobs:
           lfs: false
       - name: Install Bundler
         run: gem install bundler -v 2.6.5 --user-install
+      - name: Install dependencies with Bundler 2.6.5
+        run: bundle _2.6.5_ install
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
